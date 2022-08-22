@@ -32,10 +32,10 @@ Through various visualisations and Linear Regression Analysis, the project went 
 This regression analysis can successfully account for the variance of 91% of the model using the top 15 features to predict CR.
 
 The final model was showing a better fit of Actual vs Predicted CR values, with a slight logarithmic curve.
-![Final_Model](Images/Images/Final_Model.png)
+![Final_Model](images/Final_Model.png)
 
 Finally, using the stats of a Home-brew Monster created on the D&D Beyond tool, the model was able to then predict and therefore calculate what it's CR should be.
-![CR_prediction](Images/CR_prediction.png)
+![CR_prediction](images/CR_prediction.png)
 
 The Challenge Rating for this Monster was found to be 13, which was higher than initially thought without this calculator model.
 
