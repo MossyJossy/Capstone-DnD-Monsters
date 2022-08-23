@@ -80,5 +80,6 @@ For any additional questions, please contact **Jocelyn Fisher** at **[jocelyncla
 ├── images
 ├── DnD Challenge Rating Prediction Notebook.ipynb
 ├── DnD Challenge Rating Prediction Presentation.pdf
+├── Glossary.md
 └── README.md
 ```
