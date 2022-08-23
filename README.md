@@ -1,4 +1,4 @@
-# Title
+# DnD Challenge Rating Prediction
 
 Authors: Jocelyn Fisher
 
@@ -24,27 +24,44 @@ This data-set includes 762 different D&D Monsters, with 53 columns on their deta
 The data-set used for this project can be found in the [here](data/aidedd_blocks2.csv), in the data folder of this repository.
 
 ## Method
-This project used an iterative approach to regression analysis to provide an insightful overview into the Challenge Rating of official D&D Monsters, in order to construct an accurate prediction model based upon the Monsters most correlated and important stats.
+This project used an iterative approach to regression analysis to provide an insightful overview into the Challenge Rating of official D&D Monsters, in order to construct an accurate prediction and calculation model, as well as provide inference into the most correlated stats.
 
-Through various visualisations and Linear Regression Analysis, the project went through five total iterations, including the simple base model. These versions tackled issues including identifying and transforming the categorical data of `size` and `type`, into ordinal and linear types. Also, in-built selection features were utilised to choose an appropriate amount of independent variables to reduce computational processing.
+Through various visualisations and Linear Regression Analysis, the project went through six total iterations, including the simple base model. These versions tackled issues including identifying and transforming the categorical data of `size` and `type`, into ordinal and linear types, as well as experimenting with normalisation of skewed data, however the latter was not implemented as it effected the models ability to account for variability.
 
 ## Results
-This regression analysis can successfully account for the variance of 91% of the model using the top 15 features to predict CR.
+This regression analysis can successfully account for the variance of 91% of the model.
 
-The final model was showing a better fit of Actual vs Predicted CR values, with a slight logarithmic curve.
+The final model was showing a better fit of Actual vs Predicted CR values, with a slight curve in the higher Challenge Ratings.
 ![Final_Model](images/Final_Model.png)
+
+Using an inbuilt method, the model was able to provide inference upon what variable were most correated with cr as well.
+
+The top 10 were:
+
+1) hp
+2) intel
+3) cha
+4) ac
+5) wis
+6) strength
+7) con
+8) dex
+9) multiattack
+10) type_fiend
+
+### Prediction
 
 Finally, using the stats of a Home-brew Monster created on the D&D Beyond tool, the model was able to then predict and therefore calculate what it's CR should be.
 ![CR_prediction](images/CR_prediction.png)
 
-The Challenge Rating for this Monster was found to be 13, which was higher than initially thought without this calculator model.
+The Challenge Rating for this Monster was found to be 14, which was 4 levels higher than initially thought without this calculation/prediction model.
 
 ## Conclusions
-Based off this regression analysis, D&D Beyond may use this prediction model to implement a Challenge Rating Calculator for their Monster Creation Tool, and make it available to the online platform players.
+Based off this regression analysis, D&D Beyond may use this prediction model to implement a Challenge Rating Calculator for their Monster Creation Tool, and make it available to the online platform players.  
 
-- Those that wish to create Home-brew Monsters with a high CR may focus on the most correlated stat scores, with the top 6 being hp, intelligence, charisma, armour class, wisdom and strength.
-- Many experience players have anecdotally claimed that "CR is measured only by ac and hp", and although these claims have some merit showcased within this analysis, ac interestingly does not have as much importance to the model as previously thought.
-- The fiend Monster type has been shown to be the species of creature that is most correlated with CR. More analysis into reasons behind this may provide a more sophisticated understanding of why, such as whether it is an extra common type or if they are particular to having multi-attacks.
+- Those that wish to create Home-brew Monsters with a high CR may focus on the most correlated stat scores, with the top 5 being hp, intelligence, charisma, armour class and wisdom.  
+- Many have anecdotally claimed that "CR is measured only by ac and hp", and although these claims have some merit showcased within this analysis, `ac` interestingly does not have as much importance to the model as previously thought.
+- The `fiend` Monster type has been shown to be the species of creature that is most correlated with CR. More analysis into reasons behind this may provide a more sophisticated understanding of why, such as whether they are particular to having multiattacks or higher stats than most other Monster types.
 - As more official Dungeon & Dragons Monsters are released through game expansions, they can also be included upon the model's data-set to improve the Challenge Rating predictions.
 
 ## For More Information
