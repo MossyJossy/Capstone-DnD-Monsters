@@ -59,9 +59,9 @@ The Challenge Rating for this Monster was found to be 14, which was 4 levels hig
 ## Conclusions
 Based off this regression analysis, D&D Beyond may use this prediction model to implement a Challenge Rating Calculator for their Monster Creation Tool, and make it available to the online platform players.  
 
-- Those that wish to create Home-brew Monsters with a high CR may focus on the most correlated stat scores, with the top 5 being hp, intelligence, charisma, armour class and wisdom.  
 - Many have anecdotally claimed that "CR is measured only by ac and hp", and although these claims have some merit showcased within this analysis, `ac` interestingly does not have as much importance to the model as previously thought.
 - The `fiend` Monster type has been shown to be the species of creature that is most correlated with CR. More analysis into reasons behind this may provide a more sophisticated understanding of why, such as whether they are particular to having multiattacks or higher stats than most other Monster types.
+- Further collated information on Monster Resistances and Immunities, which was not provided in the data sourced, could extrapolate on possible missing inferences into what dictates CR.
 - As more official Dungeon & Dragons Monsters are released through game expansions, they can also be included upon the model's data-set to improve the Challenge Rating predictions.
 
 ## For More Information
