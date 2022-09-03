@@ -3,7 +3,7 @@
 Authors: Jocelyn Fisher
 
 ## Overview
-This project uses an iterative approach to Regression Modelling in order to understand how a Home-brew Dungeon & Dragons Monster stats may effect its Challenge Rating (CR). With increasing popularity surrounding the Tabletop RPG, D&D Beyond can use this Prediction Model to calculate the CR of any Home-brew Monster to a 91% accuracy and once implemented into their Website, can provide a CR Calculation/Prediction tool for the increasing player base.
+This project uses an iterative approach to Regression Modelling in order to understand how a Home-brew Dungeon & Dragons Monster stats may effect its Challenge Rating (CR). With increasing popularity surrounding the Tabletop RPG, D&D Beyond can use this Prediction Model to calculate the CR of any Home-brew Monster while successfully accounting for the variance of 91% of the model. Once implemented into their Website, can provide a CR Calculation/Prediction tool for the increasing player base.
 
 ## Business Problem
 [D&D Beyond](https://www.dndbeyond.com) is one of the most popular online Dungeon and Dragons platforms for players all over the world. It has hundreds of pages of information on the Tabletop Game and it's rules, as well as many Tools for players to use, such as;
@@ -52,6 +52,8 @@ The top 10 were:
 ### Prediction
 
 Finally, using the stats of a Home-brew Monster created on the D&D Beyond tool, the model was able to then predict and therefore calculate what it's CR should be.
+
+Originally, this Home-brew Monster was created from a template of an existing official Monster, which is something that you can choose to do on D&D Beyond. Many of it's characteristics were altered, and therefore the CR was also adjusted to what was thought to be an appropriate level of 10.
 ![CR_prediction](images/CR_prediction.png)
 
 The Challenge Rating for this Monster was found to be 14, which was 4 levels higher than initially thought without this calculation/prediction model.

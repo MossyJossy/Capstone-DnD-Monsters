@@ -16,7 +16,7 @@ For a full overview of terms please visit [D&D Beyond Monster Rules](https://www
 
 **D&D** - Dungeons & Dragons, a fantasy tabletop role-playing game (RPG).
 
-**Home-brew** - Game material made by players of a game, rather than by an official or third-party publisher. In a Du&D context, this often includes new spells, character classes, campaign settings or Monsters.
+**Home-brew** - Game material made by players of a game, rather than by an official or third-party publisher. In a D&D context, this often includes new spells, character classes, campaign settings or Monsters.
 
 **HP** – Short for Hit Points, the life force of your character so to speak, if you drop to 0hp then the creature is officially dying!
 
