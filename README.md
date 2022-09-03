@@ -3,7 +3,7 @@
 Authors: Jocelyn Fisher
 
 ## Overview
-This project uses an iterative approach to Regression Modelling in order to understand how a Home-brew Dungeon & Dragons Monster stats may effect its Challenge Rating (CR). With increasing popularity surrounding the Tabletop RPG, D&D Beyond can use this Prediction Model to calculate the CR of any Home-brew Monster while successfully accounting for the variance of 91% of the model. Once implemented into their Website, can provide a CR Calculation/Prediction tool for the increasing player base.
+This project uses an iterative approach to Regression Modelling in order to understand how a Home-brew Dungeon & Dragons Monster stats may effect its Challenge Rating (CR). With increasing popularity surrounding the Tabletop RPG, D&D Beyond can use this Prediction Model to calculate the CR of any Home-brew Monster while successfully accounting for the variance of 91% of the model. Once implemented into their Website, it can provide a CR Calculation/Prediction tool for the increasing player base.
 
 ## Business Problem
 [D&D Beyond](https://www.dndbeyond.com) is one of the most popular online Dungeon and Dragons platforms for players all over the world. It has hundreds of pages of information on the Tabletop Game and it's rules, as well as many Tools for players to use, such as;
