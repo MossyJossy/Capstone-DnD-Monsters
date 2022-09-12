@@ -12,14 +12,14 @@ This project uses an iterative approach to Regression Modelling in order to unde
 - Organising a campaign,
 - Designing character made (or Home-brew) Monsters.
 
-In order to complete a Home-brew Monster, the tool requires the player to input it's Challenge Rating (referred to as CR), which is a number indication of how difficult the Monster may be to defeat. However, there is no tool within D&D Beyond itself to do this, and online research finds that the calculation of CR is quite a mystifying problem, especially for people that are new to the game.
+In order to complete a Home-brew Monster, the tool requires the player to input it's Challenge Rating (referred to as CR), which is a numbered indication of how difficult the Monster may be to defeat. However, there is no tool within D&D Beyond itself to do this, and online research finds that the calculation of CR is quite a mystifying problem, especially for people that are new to the game.
 
 With increasing popularity over the past 5 years, and a new D&D movie on the horizon, a wave of new players may be on the way. Therefore, it is of D&D Beyond's benefit to produce a CR calculator that can be implemented into the website in preparation for this influx. This project aims to provide such a tool that can use the stats of any Home-brew Monster, and output a CR that is appropriate and suitable, based upon a prediction model using Official Monster stats and how they correlate with their CR.
 
 ## The Data
 The data sourced for this regression analysis comes from [Kaggle](https://www.kaggle.com/datasets/travistyler/dnd-5e-monster-manual-stats), which has been API scraped from an online version of the Official 5th Edition Dungeon & Dragons Compendium available at [AideDD](https://www.aidedd.org/dnd-filters/monsters.php).
 
-This data-set includes 762 different D&D Monsters, with 53 columns on their details. It provided insight into not only their base stats such as Health Points (HP) and Armour Class (AC), but also information on their Action and Attack abilities. Thankfully, as D&D is a maths and number based tabletop RPG, many of the desired columns were already integers which is appropriate for regression analysis.
+This data-set includes 762 different D&D Monsters, with 53 columns on their details. It provided insight into not only their base stats such as Health Points (HP) and Armour Class (AC), but also information on their Action and Attack abilities and physical characteristics such as Type (as in it's species) and Size. Thankfully, as D&D is a dice and number based tabletop RPG, many of the desired columns were already integers which is appropriate for regression analysis.
 
 The data-set used for this project can be found in the [here](data/aidedd_blocks2.csv), in the data folder of this repository.
 
@@ -38,16 +38,16 @@ Using an inbuilt method, the model was able to provide inference upon what varia
 
 The top 10 were:
 
-1) hp
-2) intel
-3) cha
-4) ac
-5) wis
-6) strength
-7) con
-8) dex
-9) multiattack
-10) type_fiend
+1) Health Points
+2) Intelligence
+3) Charisma
+4) Armour Class
+5) Constitution
+6) Strength
+7) Wisdom
+8) Dexterity
+9) Multiattack
+10) Speed
 
 ### Prediction
 
@@ -57,6 +57,9 @@ Originally, this Home-brew Monster was created from a template of an existing of
 ![CR_prediction](images/CR_prediction.png)
 
 The Challenge Rating for this Monster was found to be 14, which was 4 levels higher than initially thought without this calculation/prediction model.
+
+Through further visualisations it was also noted that the "Fiend" Monster `type` was much more positivley correlated to CR than it's 13 other counterparts, with "Dragon" being a fairly distant second.
+![Type_vs_CR](images/Monster_TypevsCR.png)
 
 ## Conclusions
 Based off this regression analysis, D&D Beyond may use this prediction model to implement a Challenge Rating Calculator for their Monster Creation Tool, and make it available to the online platform players.  
